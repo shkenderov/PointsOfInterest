@@ -1,0 +1,62 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper{
+    height:auto;
+    min-height: 92vh;
+    padding: 100px 0;
+    
+}
+
+h1, h3{
+    text-align: center;
+    color:white;    
+    text-shadow: 2px 2px 4px #000000;
+
+}
+p{
+    color: white;
+    text-align: center;
+}
+
+.link{
+    text-decoration: white underline;
+    text-align: center;
+    color: white;
+    display: block;
+    width: 20%;
+    margin: 0 40%;
+}
+
+.link:hover{
+    text-decoration: #0067bb underline;
+
+
+}
+.rescontainer{
+    margin-bottom:20px;
+}
+.btn{
+    width:100px;
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+    font-size: 25px;
+    margin-left:2px;
+}
+.btn:hover{
+    cursor: pointer;
+    border:2px solid #0067bb;
+}
+
+
+

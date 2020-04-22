@@ -1,0 +1,40 @@
+.results_container{
+    width:100%;
+}
+.result{
+    text-align: center;
+    height:400px;
+    width: 23%;
+    float: left;
+    font-size:20px;
+    color:white;
+    background-color: black;
+    opacity: 0.9;
+    margin:1%;
+    padding-top:15px;
+}
+
+.resultlink{
+    color:white;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    line-height: 1.6;
+
+}
+.resultlink:hover{
+    border-bottom:3px solid #0067bb;
+}
+
+.resbtn{
+    width:150px;
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+    font-size: 25px;
+    margin:10px 0;
+  
+}
+.resbtn:hover{
+    cursor: pointer;
+    border:2px solid #0067bb;
+}

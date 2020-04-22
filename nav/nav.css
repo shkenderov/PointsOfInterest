@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+h4{
+    font-size: 20px;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.logo{
+    color:white;
+    letter-spacing: 5px;
+}
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    margin-top:2vh;
+
+}
+
+
+.nav-links li> a{
+    color:white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+    padding-top:20px;
+}
+
+.nv:hover{
+    color:#0067bb;
+}
+.nav-links li{
+    list-style: none;
+}
+#navbtn{
+    height:auto;
+    width:auto;
+    border:3px solid white;
+    background-color: transparent;
+    font-size:14px;
+    color:white;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+    margin-top:-10px;
+    width:150px;
+    text-align: center;
+    padding:11px 0;
+    
+}
+#navbtn:hover{
+    border:3px solid #0067bb;
+}
+#footerbtn{
+    padding: 5px;
+    border:2px solid white;
+    font-size:14px;
+    color:white;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size:14px;
+    text-align: center;
+    background-color: black;
+    
+    
+}
+#footerbtn:hover{
+    border:2px solid #0067bb;
+
+
+}
+
+#burger{
+    cursor: pointer;
+    display: none;
+}
+#burger div{
+    width: 25px;
+    height:3px;
+    background-color: white;
+    margin:5px;
+}
+footer{
+    background-color: black;
+    height:110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+
+}
+.footer-links li>a{
+    color:white;
+}
+.footer-links li{
+    text-align: center;
+    list-style: none; 
+    margin:10px 0;  
+
+}
+.footer-links li>a:hover{
+    color:#0067bb;
+}
+
+@media  (max-width: 900px) {
+
+    .nav-links{
+        position: absolute;
+        right:0px;
+        height:92vh;
+        top:8vh;
+        background-color: black;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+    }
+    #navbtn{
+        height:50px;
+    }
+    #burger{
+        display: block;
+    }
+    h4{
+        font-size:15px;
+    }
+}
+
+.nav-active{
+    display: flex;
+    margin-top:0;
+    border-left:1px solid #0067bb;
+}
+

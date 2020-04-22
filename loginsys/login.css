@@ -1,0 +1,97 @@
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin:20px 0;
+}
+#wrapper{
+    height:92vh;
+    width:90%;
+    margin:0 5%;
+}
+
+
+.nav-links{
+    margin-top:0;
+}
+form{
+    width: 100%;
+}
+.txtbox{
+    height:50px;
+    width:50%;
+    margin: 0 25% 10px 25%;
+    font-size: 25px;
+    background-color: transparent;
+    color:white;
+    border:none;
+    border-bottom: 2px solid white;
+    outline:none;
+}
+
+.txtbox:focus{
+    outline: none;
+    border-bottom: 2px solid #0067bb;
+}
+.btn{
+    width:100px;
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+    font-size: 25px;
+    margin-left:25%;
+}
+.btn:hover{
+    cursor: pointer;
+    border:2px solid #0067bb;
+}
+
+#regtxt{
+    color: white;
+    margin: 10px 25% 10px 25%;
+
+}
+#reglink{
+    margin-left:25%;
+    color:white;
+    text-decoration: white underline;
+}
+#reglink:hover{
+    text-decoration:  #0067bb underline;
+
+}
+
+@media(max-height:680px){
+
+    #wrapper{
+        height:680px;
+        padding-bottom:5px;
+    }
+
+}
+
+@media  (max-width: 900px) {
+
+    .txtbox{
+        width:90%;
+        margin:0 5% 10px 5%;
+
+    }
+    .btn{
+        margin-left: 5%;
+    }
+    
+    #regtxt{
+        margin-left:5%;
+    }
+    #reglink{
+        margin-left:5%;
+    }
+    
+}

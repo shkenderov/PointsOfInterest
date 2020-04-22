@@ -1,0 +1,17 @@
+
+#responsedivreview{
+    display: none;
+    background-color: green;
+    width:50%;
+    height:50px;
+    
+    padding-top:15px;
+
+    margin-left:25%; 
+    margin-top:20px;   
+}
+#confirmtxt{
+    text-emphasis: bold;
+    display: flex;
+    justify-content: center;
+}

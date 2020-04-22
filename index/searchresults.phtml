@@ -1,0 +1,43 @@
+
+
+<html>
+    <head><link rel="stylesheet" href="searchresults.css">
+</head>
+<body>
+
+<h1>Search Results</h1>
+
+
+<?php
+require_once("../model/PoiDAO.php");
+
+if($results==null){
+    echo '<div class="result">';
+    echo 'No Points of interest in this region.</br>';
+    echo "<a class='resultlink' href='index.php#wrapper'>Try again</a> <br/>";
+
+    echo "</div>";
+}
+foreach ($results as $poi) 
+{
+                    echo '<div class="result">';
+                    $id=$poi->getID();
+                    $poi->printDetails();
+
+                    echo '<form method="post" action="recommend.php">
+                            <input type="hidden" value="'.$id.'"  name="poiid" />
+                            <input class="resbtn" type="submit"  value="Recommend" />
+                        </form>';
+                    echo '<form method="post" action="showreviews.php">
+                            <input type="hidden" value="'.$id.'"  name="poiid" />
+                            <input class="resbtn" type="submit"  value="See reviews" />
+                        </form>';
+
+                    echo "</div>";
+
+                    
+                }
+?>
+
+</body>
+</html>

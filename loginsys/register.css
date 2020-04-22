@@ -1,0 +1,27 @@
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin:20px 0;
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+}
+a{
+    color: white;
+    text-decoration: white underline;
+    font-size:30px;
+    font-weight: bold;
+    margin-top:50px;
+}
+a:hover{
+    text-decoration: #0067bb underline;
+
+}

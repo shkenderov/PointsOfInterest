@@ -1,0 +1,94 @@
+a{
+    color:white;
+    text-decoration: underline;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+h1{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h3{
+    color:white;
+    text-align: center;
+}
+#wrapper{
+    height:92vh;
+
+    padding: 100px 0;
+    
+}
+
+#addform{
+    width:50%;
+    margin:0 25%;
+
+}
+
+.txtbox{
+    margin-bottom:10px;
+    height:50px;
+    width:100%;
+    font-size: 25px;
+    background-color: transparent;
+    color:white;
+    border:none;
+    border-bottom: 2px solid white;
+    outline:none;
+    
+}
+
+.txtbox:focus{
+    outline: none;
+    border-bottom: 2px solid #0067bb;
+}
+
+textarea{
+    height:100px;
+    width:100%;
+    font-size: 25px;
+    background-color: transparent;
+    color:white;
+    border:none;
+    border-bottom: 2px solid white;
+    outline:none;
+    margin-bottom: 10px;
+}
+textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #0067bb;
+}
+
+.btn{
+    width:150px;
+    height:50px;
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+    font-size: 25px;
+    margin-left:2px;
+}
+.btn:hover{
+    cursor: pointer;
+    border:2px solid #0067bb;
+}
+
+
+
+@media(max-height:680px){
+
+    #wrapper{
+        height:680px;
+        padding-bottom:5px;
+    }
+
+}
