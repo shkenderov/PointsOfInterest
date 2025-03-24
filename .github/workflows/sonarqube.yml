@@ -15,9 +15,9 @@ jobs:
 
       - name: Install SonarScanner
         run: |
-          curl -fsSL https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-5.0.1.3006-linux.zip -o sonar-scanner.zip
+          curl -sSLo sonar-scanner.zip https://github.com/SonarSource/sonar-scanner-cli/releases/download/5.0.1/sonar-scanner-cli-5.0.1-linux.zip
           unzip sonar-scanner.zip
-          mv sonar-scanner-5.0.1.3006-linux sonar-scanner
+          mv sonar-scanner-5.0.1-linux sonar-scanner
           echo "$(pwd)/sonar-scanner/bin" >> $GITHUB_PATH
 
       - name: Run SonarQube Scan
