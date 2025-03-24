@@ -19,3 +19,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           projectBaseDir: .
+          args: >
+            -Dsonar.projectKey=points_of_interest
+            -Dsonar.host.url=http://localhost:9000
+            -Dsonar.sources=src
