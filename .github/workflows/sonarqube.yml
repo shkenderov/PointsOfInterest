@@ -1,23 +1,6 @@
-name: SonarQube Analysis
-
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  sonarqube:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@<action version> # Ex: v4.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
-        env:
-          sonar-scanner \
-            -Dsonar.projectKey=points_of_interest \
-            -Dsonar.host.url=http://localhost:9000 \
-            -Dsonar.login=$SONAR_TOKEN \
-            -Dsonar.language=php \
-            -Dsonar.sources=.
+- name: SonarQube Scan
+  uses: SonarSource/sonarqube-scan-action@v1.2
+  env:
+    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  with:
+    projectBaseDir: .
