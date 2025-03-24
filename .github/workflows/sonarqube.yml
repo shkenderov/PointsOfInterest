@@ -1,6 +1,21 @@
-- name: SonarQube Scan
-  uses: SonarSource/sonarqube-scan-action@5.0.0
-  env:
-    SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-  with:
-    projectBaseDir: .
+name: SonarQube Analysis
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@5.0.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          projectBaseDir: .
