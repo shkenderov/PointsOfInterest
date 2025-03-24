@@ -20,10 +20,9 @@ jobs:
           mv sonar-scanner-5.0.1-linux sonar-scanner
           echo "$(pwd)/sonar-scanner/bin" >> $GITHUB_PATH
 
-      - name: Run SonarQube Scan
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@<action version> # Ex: v4.1.0, See the latest version at https://github.com/marketplace/actions/official-sonarqube-scan
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
           sonar-scanner \
             -Dsonar.projectKey=points_of_interest \
             -Dsonar.host.url=http://localhost:9000 \
