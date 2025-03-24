@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-        
+
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@5.0.0
+        uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
